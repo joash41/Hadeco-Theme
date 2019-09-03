@@ -1,0 +1,151 @@
+#footer
+    background: #b0a8a6
+    .wrapper
+        padding-bottom: 38px
+        .fwidget
+            padding: 38px 0 0
+            width: 33.3%
+            @media (max-width: 768px)
+                width: 50%
+            @media (max-width: 400px)
+                width: 100%
+            &.three
+                @media (max-width: 768px)
+                    width: 100%
+            .widgettitle
+                font-family: "Open Sans", sans-serif
+                font-size: 1.2em
+                color: $white
+                display: inline-block
+                padding-bottom: 5px
+                margin-bottom: 15px
+                border-bottom: 2px solid #867b78
+            .footerSocial
+                display: inline-block
+                border-radius: 50%
+                vertical-align: middle
+                color: #867b78
+                background: white
+                text-align: center
+                transition: all 0.3s
+                @media (max-width: 768px)
+                    margin-right: 10px
+                &:hover
+                    background: #867b79
+                    color: #afa8a6
+                .icon-wrapper
+                    padding: 6px
+                    width: 24px
+                    height: 24px
+                    display: flex
+                    align-items: center
+                    justify-content: center
+                    @media (max-width: 768px)
+                        width: 38px
+                        height: 38px
+                    .footerIcon
+                        font-size: 20px
+                        line-height: normal
+                        @media (max-width: 768px)
+                            font-size: 28px
+            .menu
+                color: $white
+                font-family: $font-secondary
+                li
+                    list-style: none
+                    padding-bottom: 10px
+                    margin: 0px
+                    a
+                        font-size: 0.9em
+                        color: $white
+            .gform_wrapper
+                margin: 20px 0 0 0
+                .gform_heading
+                    margin-bottom: 7px
+                    .gform_title
+                        color: white
+                        font-weight: 400
+                        font-size: 0.9em
+                .gform_body 
+                    li.gfield
+                        margin-bottom: 0px
+                input, select
+                    color: white
+                    font-size: 0.9em
+                    line-height: normal
+                    border: 2px solid #867b78
+                    &::placeholder
+                        color: #E0E2E4
+                .gform_footer
+                    input
+                        margin: 0
+                        padding: 5px 0px
+                        font-family: inherit
+                        font-weight: 900
+                        min-width: 100px
+                        border-radius: 25px
+                        background: white
+                        color: #867b79
+                        transition: all 0.3s
+                        &:hover
+                            background: #867b79
+                            color: white
+#copyright
+    background: #edeaea
+    padding: 17px
+    line-height: normal
+.circle_wrapper
+    z-index: -999999
+    width: 100%
+    height: 100%
+    top: 0
+    bottom: 0
+    position: absolute
+    overflow: hidden
+.circle
+    background-color: #faf9f9
+    width: 400px
+    height: 400px
+    display: block
+    border-radius: 400px
+    z-index: -1
+    position: relative
+    +pulse(20s)
+    &.medium
+        width: 600px
+        height: 600px
+        border-radius: 600px
+        +pulse(40s)
+    &.large
+        width: 1000px
+        height: 1000px
+        border-radius: 1000px
+        +pulse(30s)
+    &.large2
+        width: 700px
+        height: 700px
+        border-radius: 700px
+        +pulse(25s)
+    &.one
+        top: 4%
+        right: 4%
+    &.two
+        top:17%
+        left: 75%
+    &.three
+        top:45%
+        right: 18%
+    &.four
+        top:82%
+        left: 64%
+@-webkit-keyframes "pulse"
+    0%, 100%
+        -moz-transform: scale(1)
+        -ms-transform: scale(1)
+        -webkit-transform: scale(1)
+        transform: scale(1)
+    50%
+        -moz-transform: scale(1.5)
+        -ms-transform: scale(1.5)
+        -webkit-transform: scale(1.5)
+        transform: scale(1.5)

@@ -1,0 +1,64 @@
+.postWrapper
+    padding: 40px 0px 20px 0px
+.searchBlogWrapper
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    padding-right: 40px
+    margin-top: 40px
+    @media (max-width: 768px)
+        flex-direction: column
+        padding: 0px
+    .searchBlogText
+        padding-right: 20px
+        @media (max-width: 768px)
+            margin-bottom: 15px
+.allPostsWrap
+    display: flex
+    flex-wrap: wrap
+    padding-bottom: 40px
+.archivedPosts
+    width: 50%
+    padding: 20px
+    float: left
+    box-sizing: border-box
+    @media screen and (max-width: 600px)
+        width: 100%
+        text-align: center
+    .imager
+        width: 100%
+        display: block
+        a
+            height: 240px
+            display: block
+            width: 100%
+            background-size: cover
+            background-position: center
+    .archivePost
+        width: 100%
+        padding: 20px 10px 10px 10px
+        box-sizing: border-box
+        h2
+            margin-bottom: 10px
+            font-size: 1.5em
+            line-height: 1.5em
+        p
+            margin-bottom: 0px
+            a.read-more
+                display: block
+                clear: both
+                font-weight: bold
+                margin-top: 10px
+
+//Pagination
+.pagination
+    padding: 20px 0px 0px 0px
+    width: 100%
+    display: block
+    overflow: hidden
+    border-top: 2px solid $black
+    a
+        text-transform: uppercase
+    .alignleft,
+    .alignright
+        margin-bottom: 0px

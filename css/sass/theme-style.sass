@@ -1,0 +1,41 @@
+$black : #343233
+$white : #ffffff
+$offwhite : #cccccc
+$grey : #a6a6a6
+$lightGrey : #ababab
+$maxWidth : 1200px
+$nawrrowWidth : 900px
+$lightBrown: #9b8d89
+$lightestBrown : #f8f6f6
+$brown : #5e3427
+$blue : #0d527d
+$yellow : #f5af1f
+$darkYellow : #bf8100
+.whiteBkg 
+    background-color: $white
+
+//Base Variables
+@import base/reset
+@import base/variables
+@import base/typography
+@import base/layouts
+@import base/buttons
+@import base/gravityForms
+@import base/svgAnimations
+@import parts/header-top-nav
+@import parts/header
+@import parts/sidenav
+@import parts/footer
+@import parts/blog
+@import parts/menu-parent-page
+@import gutenburg/_switchboard
+// Theme Style
+@import templates/parts/_switchboard
+//Woocommerce
+@import woocommerce/_switch
+//Posts
+@import templates/archive-posts
+@import templates/single-post
+
+//Search
+@import templates/search

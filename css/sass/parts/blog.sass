@@ -1,0 +1,39 @@
+//main blog page sass
+#hadecobog
+    margin: 40px 0px 20px 0px
+    .wrapper
+        display: flex
+        flex-wrap: wrap
+        .postimgblock
+            width: 33%
+            padding: 10px
+            position: relative
+            box-sizing: border-box
+            margin-bottom: 30px
+            @media (max-width: 768px)
+                width: 100%
+            .postImageWrapper
+                width:100%
+                height:300px
+                background-size: cover
+                background-position: center center
+            a
+                h2
+                    margin-top: 15px
+                    font-size: 1.2em
+                    @media screen and (max-width: 600px)
+                        font-size: .9em
+            a.button
+                font-size: .9em
+                padding: 6px 10px
+                position: relative
+                @media screen and (max-width: 600px)
+                    font-size: .8em
+                    @media screen and (max-width: 500px)
+                        position: relative
+                        text-align: center
+.wrapper.paging
+    text-align: center
+    padding: 20px 0px
+    border-top: 1px solid $lightBrown
+    color: $brown

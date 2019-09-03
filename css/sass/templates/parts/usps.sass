@@ -1,0 +1,27 @@
+section.usps
+    width: 100%
+    background-color: $lightBrown
+    color: $white
+    font-size: 14px
+    padding: 10px 0
+    margin-top: 20px
+    margin-bottom: 20px
+    .wrapper
+        display: flex
+        justify-content: space-between
+        @media (max-width: 768px)
+            display: inline-block
+        .singleUSP
+            display: flex
+            &:not(:last-child)
+                margin-right: 20px
+                @media (max-width: 768px)
+                    margin-bottom: 10px
+            i
+                margin-top: 4px
+                margin-right: 5px
+                font-size: 0.83em
+            a
+                color: $yellow
+                &:hover
+                    color: #f7c96a

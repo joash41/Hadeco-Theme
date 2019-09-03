@@ -1,0 +1,96 @@
+$font-primary : 'Open Sans', sans-serif
+$font-secondary : 'Libre Baskerville', serif
+$font-size: 16px
+
+body
+    -webkit-font-smoothing: antialiased
+    font-family: $font-primary
+    font-size: $font-size
+    color: $brown
+a
+    text-decoration: none
+    color: $yellow
+    &:hover
+        color: $darkYellow
+// Headings
+h1
+    font-size: 3em
+h2
+    font-size: 2.8em
+h3
+    font-size: 2.5em
+    &.widgettitle
+        font-size: 1.5em
+        margin-bottom: 5px
+        text-align: left
+        font-weight: bold
+    &.sectionTitle
+        font-size: 1.7em
+        font-weight: bold
+    &.shopWidgetTitle
+        font-family: $font-primary 
+        font-size: 1em
+        line-height: 38px
+        margin-bottom: 5px
+        text-align: left
+        padding-right: 38px
+        position: relative
+        box-sizing: border-box
+        color: $white
+        display: block
+        background-color: $brown
+        padding-left: 10px
+        &:hover
+            cursor: pointer
+        i
+            position: absolute
+            right: 0px
+            top: 0px
+            width: 38px
+            height: 38px
+            line-height: 38px
+            font-size: 10px
+            text-align: center
+            &.fa-minus
+                display: none
+h4
+    font-size: 1.5em
+h5
+    font-size: 1.3em
+h6
+    font-size: 1em
+h1, h2, h3, h4, h5, h6
+    color: $brown
+    margin-bottom: 15px
+    font-family: $font-secondary
+    line-height: 1.5em
+p
+    font-size: 1em
+    line-height: 1.5em
+    margin-bottom: 20px
+    &.minimum-price
+        display: none
+    &.whiteText
+        color: $white
+    &.stock
+        margin-top: 10px
+        strong
+            display: block
+            clear: both
+.whiteText
+    color: $white
+.greyText
+    color: $grey
+//Text Alignments
+.textCenter
+    text-align: center
+.textLeft
+    text-align: left
+.textRight
+    text-align: right
+h2.month-hdng
+    padding-top: 100px
+.page-id-99 .elementor-text-editor li
+    list-style: disc
+    margin-left: 20px
+    padding-bottom: 10px

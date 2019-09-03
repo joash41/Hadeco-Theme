@@ -1,0 +1,70 @@
+.ofHidden
+    overflow: hidden
+.clearBoth
+    width: 100%
+    float: left
+    clear: both
+.spaceMe
+    width: 1px
+    height: 100%
+    display: inline-block
+    vertical-align: middle
+//Wrapper
+.wrapper,
+.site-main
+    overflow: hidden
+    width: 100%
+    max-width: $maxWidth
+    margin: 0px auto
+    @media screen and (max-width: 1240px)
+        padding-left: 20px
+        padding-right: 20px
+        box-sizing: border-box
+    &.narrow
+        max-width: 1000px
+        overflow: hidden
+        padding-top: 40px
+        padding-bottom: 40px
+    &.genericWrapper
+        padding-top: 40px
+        padding-bottom: 40px
+        +transition(0.5s)
+    &.wider
+        max-width: 1300px
+.ContentWrapper
+    border-top: 1px solid $offwhite
+    background-color: $white
+//Widths
+.half
+    width: 50%
+.quart
+    width: 25%
+.fourty
+    width: 40%
+.thirty
+    width: 30%
+.third
+    width: 33.3333%
+.seventy
+    width: 70%
+.pt40
+    padding-top: 40px
+.ptb40
+    padding: 40px 0px
+
+//
+.floatLeft
+    float: left
+.floatRight
+    float: right
+
+//Flexbox
+.flexBox
+    display: -webkit-box
+    display: -ms-flexbox
+    display: -webkit-flex
+    display: flex
+    -webkit-box-pack: justify
+    -webkit-justify-content: space-between
+    -ms-flex-pack: justify
+    justify-content: space-between

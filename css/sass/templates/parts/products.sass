@@ -1,0 +1,28 @@
+#hi_wrapper
+.woocommerce
+    ul.products li.product
+        h2.woocommerce-loop-product__title
+            box-sizing: border-box
+            padding: .5em 1.5em
+            width: 100%
+            text-align: center
+            font-weight: 700
+            font-family: $font-primary
+            border: 0
+        .woocommerce-LoopProduct-link .price
+            color: #5e3426
+            font-weight: 700
+            font-size: 1em
+            text-align: center
+        .icon-wrapper 
+            cursor: pointer
+            text-align: center
+            margin-top: 20px
+            i.fa-search-plus
+                padding: 10px
+                border: 2px solid #5e3427
+                font-size: 20px
+                +transition(0.3s)
+            &:hover i.fa-search-plus
+                background: #5e3427
+                color: white

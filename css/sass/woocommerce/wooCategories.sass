@@ -1,0 +1,276 @@
+#hi_wrapper
+    &.home li.product 
+        opacity: 1
+        @media (max-width: 768px)
+            width: 100% !important
+            opacity: 0
+            &.is-selected
+                opacity: 1
+        .productInfo
+            width: 92%
+            opacity: 1
+
+    //Product Info lightbox!
+    li.product
+        position: relative
+        @media (max-width: 600px)
+            width: 100%
+        .productInfo
+            display: none
+            opacity: 0
+            position: absolute
+            top: 0px
+            left: 0px
+            width: 90%
+            height: 100%
+            overflow: hidden
+            background-color: $lightestBrown
+            @media (max-width: 768px)
+                width: 90%
+            @media (max-width: 600px)
+                width: 94%
+            //Close button
+            .close
+                position: absolute
+                top: 0px
+                right: 0px
+                width: 50px
+                height: 50px
+                text-align: center
+                line-height: 47px
+                font-size: 26px
+                z-index: 999
+                cursor: pointer
+                i
+                    +transition(0.2s)
+                    color: #5e3426
+                &:hover i
+                    color: #bba9a4
+            //Product Title
+            .prdTitle
+                overflow: hidden
+                max-height: 77px
+                position: relative
+                padding-right: 38px
+                font-size: 20px
+                font-weight: bold
+                .season_icon
+                    width: 25px
+                    display: inline-block
+                    img
+                        filter: invert(20%) sepia(60%) saturate(518%) hue-rotate(330deg) brightness(91%) contrast(88%)
+                        margin: 0px 0px -3px 0px
+            .perPack
+                font-family: $font-secondary
+                font-weight: normal
+                clear: both
+                display: block
+                font-size: 16px
+            //Product Price
+            .prdPrice
+                font-size: 46px
+                font-weight: bold
+                margin: 10px 0px 0px
+            //Product Meta Blocks
+            .jkg_meta
+                width: 100%
+                font-size: 14px
+                display: block
+                .jkg_meta_label
+                    width: 100%
+                    clear: both
+                    display: block
+            form.cart
+                margin: 15px 0px
+                display: flex
+                button img.jkg_atc_icon
+                    filter: invert(20%) sepia(60%) saturate(518%) hue-rotate(330deg) brightness(91%) contrast(88%)
+                    height: 18px
+            button.button.alt
+                background: transparent
+                border-color: #bba9a4
+                border-radius: 0
+                min-width: 83px !important
+                padding: 5px 0 3px
+                margin: 0 0 0 5px
+                +transition(0.2s)
+                &:hover
+                    background: #bba9a4
+        &.active
+            .productInfo
+                display: block
+                opacity: 1
+                z-index: 99
+                padding: 15px
+        ins
+            text-decoration: none
+        span.price
+            font-size: 25px !important
+        .acf_product_name
+            max-height: 75px
+            overflow: hidden
+            text-align: center
+            font-size: 1.5em
+            .season_icon
+                width: 25px
+                display: inline-block
+                img
+                    filter: invert(20%) sepia(60%) saturate(518%) hue-rotate(330deg) brightness(91%) contrast(88%)
+                    margin: 0px 0px -3px 0px
+        h4
+            text-align: center
+            font-size: 1em
+            margin-bottom: 9px
+    .category_wrapper
+        margin-bottom: 50px
+        #primary
+            #shopSideBar
+                width: 300px
+                padding-right: 40px
+                box-sizing: border-box
+                float: left
+                @media (max-width: 1000px)
+                    width: 100%
+                    padding-right: 0px
+                //Pricing Slider Widget
+                .price_slider_wrapper
+                    margin-top: 10px
+                    height: 90px
+                    position: relative
+                    .ui-widget-content
+                        margin-bottom: 45px
+                        background-color: $lightGrey
+                    .button
+                        position: absolute
+                        bottom: 0px
+                        left: 0px
+                        width: 100%
+                        margin-top: 20px
+                    .price_label
+                        margin-top: -35px
+                        width: 100%
+                        text-align: center
+                    .ui-slider-range,
+                    .ui-slider-handle
+                        background-color: $brown
+                .shopWidget
+                    height: auto
+                    margin-bottom: 20px
+                    overflow: hidden
+                    @media (max-width: 1000px)
+                        height: 40px
+                    i.fa-minus
+                        display: block
+                        @media (max-width: 1000px)
+                            display: none
+                    i.fa-plus
+                        display: none
+                        @media (max-width: 1000px)
+                            display: block
+                    &.active
+                        height: 40px
+                        @media (max-width: 1000px)
+                            height: auto
+                        i.fa-minus
+                            display: none
+                            @media (max-width: 1000px)
+                                display: block
+                        i.fa-plus
+                            display: block
+                            @media (max-width: 1000px)
+                                display: none
+                    ul
+                        padding: 0px 10px
+                        li
+                            cursor: pointer
+                            list-style: none
+                            line-height: 38px
+                            border-bottom: 2px solid $white
+                            margin: 0px
+                            &:hover,
+                            &.current-cat
+                                border-bottom-color: $brown
+                            ul.children
+                                display: none
+                            &.cat-item
+                                &:hover
+                                    border-bottom-color: $brown
+                                &.cat-parent
+                                    position: relative
+                                    padding-left: 20px
+                                    &:hover
+                                        border-bottom-color: $white
+                                    a
+                                        pointer-events: none
+                                    i
+                                        position: absolute
+                                        height: 40px
+                                        line-height: 38px
+                                        top: 0px
+                                        left: 0px
+                                        margin-right: 10px
+                                        font-size: 10px
+                                        &.fa-plus
+                                            display: block
+                                        &.fa-minus
+                                            display: none
+                                    ul.children
+                                        margin-left: -20px
+                                        li
+                                            box-sizing: border-box
+                                            padding-left: 20px
+                                            &:hover
+                                                border-bottom-color: $brown
+                                            a
+                                                display: block
+                                                pointer-events: auto
+                                    &.active
+                                        height: auto
+                                        ul.children
+                                            display: block
+                                            padding: 0px
+                                            margin-bottom: 20px
+                                        i
+                                            &.fa-plus
+                                                display: none
+                                            &.fa-minus
+                                                display: inline-block
+                                    &.current-cat-parent
+                                        height: auto
+                                        ul.children
+                                            display: block
+                                            padding: 0px
+                                        i
+                                            &.fa-plus
+                                                display: none
+                                            &.fa-minus
+                                                display: inline-block
+                .seasonTitle
+                    font-weight: 700
+                .seasonIconWrapper
+                    width: 34px
+                    padding: 0 10px
+                    img
+                        filter: invert(20%) sepia(60%) saturate(518%) hue-rotate(330deg) brightness(91%) contrast(88%)
+                .seasonWidgetWrapper
+                    display: flex
+                    align-items: center
+                    padding: 7px 0 0
+            #wrapall
+                width: calc(100% - 300px)
+                float: left
+                @media (max-width: 1000px)
+                    width: 100%
+                .woocommerce-category-description
+                    margin-bottom: 30px
+
+#hi_wrapper .category_wrapper #primary #shopSideBar .shopWidget ul li.cat-item.cat-parent.active >a
+    color:#5e3426
+#hi_wrapper .category_wrapper #primary #shopSideBar .shopWidget ul li:hover, #hi_wrapper .category_wrapper #primary #shopSideBar .shopWidget ul li.current-cat >a
+    color: #5e3426
+#hi_wrapper .product-search input[type="text"].product-search-field, .product-search input[type="text"].product-filter-field
+    display: inline-block
+    border-radius: 20px
+    border-color: #9b8d89
+#hi_wrapper input, select
+    padding: 0px 10px

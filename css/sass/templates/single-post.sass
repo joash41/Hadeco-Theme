@@ -1,0 +1,141 @@
+#hi_wrapper
+    &.single-post
+        .sPostWrapper
+            overflow: hidden
+            padding: 40px 0px
+            @media screen and (max-width: 1200px)
+                padding: 40px 20px
+            .sideBarContent
+                width: calc(100% - 280px)
+                float: left
+                box-sizing: border-box
+                padding-right: 40px
+                h2
+                    font-size: 2.2em
+                h3
+                    font-size: 1.4em
+                    font-weight: 700
+                    @media screen and (max-width: 500px)
+                        font-size: 1.1em
+                        margin-bottom: 10px
+                @media screen and (max-width: 700px)
+                    width: 100%
+                    padding-right: 0
+                    @media screen and (max-width: 500px)
+                        p
+                            font-size: .8em
+            #sidebar
+                width: 280px
+                float: left
+                margin-bottom: 20px
+                @media screen and (max-width: 700px)
+                    width: 100%
+                .widget_recent_entries li
+                    list-style: none
+                    padding-bottom: 10px
+                    margin: 0px
+                .fa-plus, .fa-minus
+                    display: none !important
+                .widget_archive ul li
+                    list-style: none
+                h3.widgettitle
+                    position: relative
+                    line-height: 38px
+                    padding-right: 38px
+                    i
+                        position: absolute
+                        top: 0px
+                        text-align: right
+                        right: 0px
+                        width: 38px
+                        height: 38px
+                        font-size: 10px
+                        line-height: 38px
+                        &.fa-plus
+                            display: none
+                        &.fa-minus
+                            display: block
+                            &:before
+                                color: $black
+                    &:hover
+                        cursor: pointer
+                .postWidget
+                    //Categories/ lists
+                    ul.product-categories
+                        width: 100%
+                        box-sizing: border-box
+                        li
+                            width: 100%
+                            display: block
+                            box-sizing: border-box
+                            padding: 0px 0px
+                            line-height: 38px
+                            font-size: 1em
+                            height: 40px
+                            overflow: hidden
+                            a
+                                line-height: 38px
+                                font-size: 1.1em
+                                display: block
+                            &:hover
+                                border-bottom: 2px solid $grey
+                    //Cart
+                    &.widget_shopping_cart
+                        li
+                            padding: 0px
+                        a.remove
+                            font-size: 0px
+                            width: 38px
+                            height: 38px
+                            display: inline-block
+                            position: relative
+                            display: inline-block
+                            vertical-align: middle
+                            float: left
+                            line-height: 38px
+                            color: $offwhite !important
+                            &:hover
+                                color: $white !important
+                            &.remove_from_cart_button:before
+                                content: "\f2ed"
+                                font-family: "Font Awesome 5 Free"
+                                font-size: 14px
+                        .total
+                            border-top: 3px solid #ebe9eb
+                            padding: 4px 0 0
+                            width: 100%
+                            text-align: right
+                        .woocommerce-mini-cart__buttons
+                            text-align: center
+                            a.button
+                                width: 48%
+                                display: inline-block
+                                min-width: 100px
+                    //Search Sidebar Widget
+                    .woocommerce-product-search
+                        input
+                            width: 100%
+                            margin-bottom: 20px
+                        button
+                            width: 100%
+                .postWidget
+                    position: relative
+                    margin-bottom: 20px
+                    &.active
+                        height: 38px
+                        overflow: hidden
+                        margin-bottom: 10px
+                        +transition(0.5s)
+                        h3.widgettitle
+                            i
+                                &.fa-plus
+                                    display: block
+                                    &:before
+                                        color: $black
+                                &.fa-minus
+                                    display: none
+                        div,
+                        form,
+                        ul
+                            +transition(0.5s)
+                            opacity: 1

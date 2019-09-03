@@ -1,0 +1,241 @@
+#hi_wrapper
+    #header
+        top: 0px
+        left: 0px
+        width: 100%
+        z-index: 999999
+        #logo
+            width: 200px
+            +inlineBlock(middle)
+            @media screen and (max-width: 600px)
+                width: 300px
+                text-align: center
+                margin: 10px auto
+                display: block
+        // Main Category Menu
+        #menu-wrapper
+            width: calc(100% - 403px)
+            +inlineBlock(middle)
+            background-color: transparent
+            padding: 10px 0px
+            ul.menu
+                text-align: right
+                margin: 0px auto
+                //Menu Items
+                li.menu-item
+                    display: inline-block
+                    margin: 0px 10px
+                    position: relative
+                    margin: 0px -5px
+                    font-size: 13px
+                    //Menu Links
+                    a
+                        font-weight: 500
+                        text-transform: uppercase
+                        line-height: 40px
+                        display: block
+                        padding: 0px 10px
+                        color: $black
+                        +transition(0.2s)
+                        @media (max-width: 600px)
+                            color: $white
+                        @media screen and (max-width: 1100px)
+                            padding: 0px 5px
+                        &:hover
+                            color: $yellow
+                    ul.sub-menu
+                        display: none
+                        opacity: 0
+                        +transition(0.5s)
+                    &:hover
+                        +transition(0.5s)
+                        ul.sub-menu
+                            +transition(0.5s)
+                            opacity: 1
+                            display: block
+                            position: absolute
+                            left: 0px
+                            top: 38px
+                            width: 300px
+                            text-align: left
+                            background: $brown
+                            padding: 10px
+                            li
+                                padding: 0px
+                                margin: 0px
+                                border-bottom: 2px solid $brown
+                                +transition(0.5s)
+                                &:hover
+                                    border-bottom: 2px solid $white
+                                    +transition(0.5s)
+                                    a
+                                        color: $yellow
+                                a
+                                    font-size: 0.9em
+                    &.current_page_item
+                        a
+                            color: $yellow
+            &.miniMenu
+                position: fixed
+                top: 30px
+                width: 100%
+                left: 0px
+                background: $white
+                z-index: 9999
+                padding: 0px
+                ul.menu
+                    text-align: center
+                    display: flex
+                    align-items: center
+                    justify-content: space-evenly
+                    max-width: $maxWidth
+                    margin: 0px auto
+                    //Menu Items
+                    li.menu-item
+                        display: inline-block
+                        //Home Logo
+                        &.menu-item-home
+                            a
+                                position: relative
+                                width: auto
+                                height: auto
+                                background-position: 0px 3px
+                                width: 80px
+                                background-size: 100px
+                @media screen and (max-width: 1000px)
+                    position: relative
+            @media screen and (max-width: 900px)
+                width: calc( 100% - 205px)
+                vertical-align: top
+                ul.menu
+                    display: none
+                    height: 0px
+                    &.active
+                        padding: 20px
+                        height: auto
+                        display: block
+                        @media (max-width: 600px)
+                            background: $lightBrown
+                    li.menu-item
+                        font-size: 16px
+                        display: block
+                        width: 100%
+                        box-sizing: border-box
+                        text-align: right
+                        //Home Logo
+                        &.menu-item-home
+                            display: none
+                        a
+                            text-align: right
+                            background-position: bottom right
+                .mobileNav
+                    display: block !important
+                    text-align: right
+                    position: relative
+                    line-height: 38px
+                    color: $black
+                    @media (max-width: 600px)
+                        color: $white
+                        background: $brown
+                    .mobileMenuTog
+                        cursor: pointer
+                        @media (max-width: 600px)
+                            padding-right: 10px
+            @media screen and (max-width: 600px)
+                width: 100%
+        //For on  mobile
+        &.active
+            #menu-wrapper
+                ul.menu
+                    li.menu-item
+                        ul.sub-menu
+                            +transition(0.5s)
+                            opacity: 1
+                            display: block
+                            position: relative
+                            text-align: left
+                            background: transparent
+                            padding: 10px
+                            top: inherit
+                            li
+                                padding: 0px
+                                margin: 0px
+                                border-bottom: 0px
+                                +transition(0.5s)
+                                &:hover
+                                    border-bottom: 0px
+                                    +transition(0.5s)
+                                a
+                                    font-size: 0.9em
+                        &:hover
+                            ul.sub-menu
+                                position: relative
+                                display: block
+                                width: auto
+        //Search Form
+        #searchform
+            width: 190px
+            border: 2px solid $lightBrown
+            +borderRadius(12px)
+            display: inline-block
+            vertical-align: middle
+            overflow: hidden
+            @media (max-width: 900px)
+                width: 100%
+                display: block
+                margin: 0px 0px 0px auto
+            input#s
+                color: $brown
+                width: 152px
+                float: left
+                border: 0px
+                padding: 0px 0px 0px 13px
+                line-height: 30px
+                &::placeholder
+                    color: #9b8d89
+            #searchsubmit
+                float: left
+                width: 38px
+                height: 30px
+                min-width: 38px
+                max-width: 38px
+                padding: 0px
+                border: 0px
+                background: transparent
+                color: $brown
+                @media (max-width: 900px)
+                    float: right
+                i
+                    width: 30px
+                    height: 30px
+                    line-height: 30px
+                    text-align: center
+    // Admin bar is visible
+    &.admin-bar
+        #header
+            top: 32px
+            @media screen and (max-width: 600px)
+                top: 0px
+    &.scrolled
+        #header
+            background: $white
+            @media screen and (max-width: 900px)
+                position: relative
+
+    div.product-search
+        float: right
+        margin: 13px auto
+        overflow: hidden
+        @media (max-width: 900px)
+            float: none
+
+    .dgwt-wcas-search-wrapp
+        padding: 0 0px 0px 10px
+        display: inline-block
+        max-width: 250px
+        @media (max-width: 700px)
+            max-width: 600px
+            padding: 0px
+    .dgwt-wcas-no-submit .dgwt-wcas-ico-magnifier
+        left: auto
+        right: 12px

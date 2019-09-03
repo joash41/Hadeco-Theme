@@ -1,0 +1,104 @@
+#hi_wrapper
+    .button,
+    .gform_footer input.button, 
+    .gform_footer input[type=submit],
+    .gform_footer input.button, 
+    .gform_footer input[type=submit],
+    input.submit,
+    input#submit,
+    #respond input#submit,
+    .noResult #searchsubmit
+        display: inline-block
+        padding: 10px 20px 8px 20px
+        font-size: 16px
+        background-color: $yellow
+        color: $white
+        line-height: 16px
+        min-width: 160px
+        box-sizing: border-box
+        +transition(0.2s)
+        -webkit-box-shadow: none
+        -moz-box-shadow: none
+        box-shadow: none
+        border: 2px solid $yellow
+        text-align: center
+        +borderRadius(10px)
+        font-weight: 300
+        outline: none
+        -webkit-font-smoothing: initial
+        text-transform: uppercase
+        &:hover
+            background-color: $white
+            +transition(0.2s)
+            color: $yellow
+            cursor: pointer
+        &.line
+            background: transparent
+            color: $yellow
+            &:hover
+                color: $white
+                background: $yellow
+.wp-block-button
+    color: $yellow !important
+    &:visited
+        color: $yellow
+    .wp-block-button__link
+        +borderRadius(10px)
+        display: inline-block
+        padding: 10px 20px
+        font-size: 1.2em
+        background-color: $white
+        color: $yellow
+        line-height: 1em
+        min-width: 160px
+        box-sizing: border-box
+        +transition(0.2s)
+        -webkit-box-shadow: none
+        -moz-box-shadow: none
+        box-shadow: none
+        border: 2px solid $yellow
+        &:hover
+            background-color: $yellow
+            +transition(0.2s)
+            color: $white
+            border-color: $yellow
+    &.is-style-default
+        .wp-block-button__link
+            +borderRadius(10px)
+            display: inline-block
+            padding: 10px 20px
+            font-size: 1.2em
+            background-color: $yellow
+            color: $white
+            line-height: 1em
+            min-width: 160px
+            box-sizing: border-box
+            +transition(0.2s)
+            -webkit-box-shadow: none
+            -moz-box-shadow: none
+            box-shadow: none
+            border: 2px solid $yellow
+            &:hover
+                background-color: $white
+                +transition(0.2s)
+                color: $yellow
+    &.is-style-squared
+        .wp-block-button__link
+            border-radius: 0px
+            display: inline-block
+            padding: 10px 20px
+            font-size: 1.2em
+            background-color: $yellow
+            color: $white
+            line-height: 1em
+            min-width: 160px
+            box-sizing: border-box
+            +transition(0.2s)
+            -webkit-box-shadow: none
+            -moz-box-shadow: none
+            box-shadow: none
+            border: 2px solid $yellow
+            &:hover
+                background-color: $white
+                +transition(0.8s)
+                color: $yellow

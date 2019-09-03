@@ -1,0 +1,79 @@
+#sideNavArea
+    width: 0px
+    position: fixed
+    left: 0px
+    top: 30px
+    padding-top: 20px
+    height: 100%
+    z-index: -1
+    overflow: hidden
+    background: $white
+    +transition(0.5s)
+    &.active
+        opacity: 1 !important
+        +transition(0.5s)
+        width: 320px
+        z-index: 9999999
+    a.homeURL
+        background-color: transparent
+        font-size: 0px
+        background-image: url('../images/logo.png')
+        background-size: 190px auto
+        background-position: center
+        width: 100%
+        height: 120px
+        background-repeat: no-repeat
+        display: block
+    .sideInnerWrap
+        height: 100%
+        overflow-y: scroll
+        width: 100%
+    ul.menu
+        width: 100%
+        box-sizing: border-box
+        padding: 20px 0px
+        li
+            width: 90%
+            margin: 0% 5%
+            display: block
+            box-sizing: border-box
+            padding: 0px 20px
+            line-height: 38px
+            font-size: 1em
+            height: 40px
+            overflow: hidden
+            a
+                line-height: 38px
+                font-size: 1.1em
+                display: block
+            &:hover
+                border-bottom: 2px solid $grey
+            &.menuIcon
+                i
+                    margin-right: 10px
+            &.menuIcon.menu-item-has-children
+                position: relative
+                padding-left: 40px
+                i
+                    position: absolute
+                    height: 40px
+                    line-height: 38px
+                    top: 0px
+                    left: 20px
+                    margin-right: 10px
+                    font-size: 10px
+                    &.fa-minus
+                        display: none
+                ul.sub-menu
+                    width: 100%
+                    margin-left: -20px
+                    display: block
+                &.active
+                    height: auto
+                    i
+                        &.fa-plus
+                            display: none
+                        &.fa-minus
+                            display: inline-block
+                    &:hover
+                        border-bottom: 0px

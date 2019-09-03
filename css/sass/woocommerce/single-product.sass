@@ -1,0 +1,108 @@
+#hi_wrapper
+    .woocommerce-product-gallery .flex-viewport
+        height: 300px
+    .productNotesWrapper
+        padding: 0px 0px 30px
+        h4
+            font-family: $font-primary
+            font-weight: 700
+    div.product
+        .woocommerce-tabs
+            .instruction
+                align-items: center
+                display: flex
+                padding-bottom: 20px
+                .icon
+                    padding-right: 20px
+                    width: 50px
+                    img
+                        filter: invert(21%) sepia(17%) saturate(1580%) hue-rotate(329deg) brightness(96%) contrast(91%)
+            ul.tabs 
+                padding: 10px 0
+                border-top: 2px solid
+                border-bottom: 2px solid
+                display: inline-block
+                width: 100%
+                margin: 40px 0
+                &::before
+                    border-bottom: none
+                li
+                    padding: 0
+                    margin: 0
+                    background-color: transparent
+                    border: 0
+                    &:not(:last-child)
+                        padding-right: 10px
+                        border-right: 2px solid
+                        border-radius: 0
+                        margin-right: 10px
+                    &.active::after
+                        display: none
+                    &::before
+                        display: none
+                    a
+                        color: #5e3427
+                    &.active a
+                        color: #fbb620
+        .season_icon
+            display: inline-block
+            width: 45px
+            float: left
+            margin-right: 11px
+            img
+                filter: invert(20%) sepia(60%) saturate(518%) hue-rotate(330deg) brightness(91%) contrast(88%)
+        form.cart
+            padding-bottom: 2em
+            border-bottom: 2px solid
+            margin-bottom: 2em
+        p.price, span.price
+            line-height: normal
+            margin-bottom: 0
+            color: #5e3426
+            font-size: 3.25em
+            font-weight: 700
+        .stock
+            font-weight: 700
+            color: #bbaaa4
+    h1.acf_product_name
+        margin-bottom: 0px
+        font-size: 2em
+        font-weight: 700
+        font-family: $font-primary
+    h4.acf_sub_product_name
+        font-size: 1em
+    span.jkg_meta
+        display: inline-block
+    span.jkg_meta_label
+        font-weight: 700
+    span.sku_wrapper
+        font-weight: 700
+        display: block
+    span.sku
+        font-weight: 400
+    span.posted_in
+        font-weight: 700
+        a
+            font-weight: 400
+    span.jkg_meta, span.sku_wrapper, span.posted_in
+        margin-bottom: 10px
+    .qtyBefore
+        float: left
+        line-height: 30px
+        margin-right: 10px
+    .quantity
+        input
+            border-color: #bbaaa4
+    img.jkg_atc_icon
+        filter: invert(20%) sepia(60%) saturate(518%) hue-rotate(330deg) brightness(91%) contrast(88%)
+        height: 21px
+    .single_add_to_cart_button.button.alt
+        padding: 3px 0 2px !important
+        min-width: 0px !important
+        width: 78px !important
+        border: 2px solid #bbaaa4 !important
+        border-radius: 0px
+        background: transparent
+        +transition(0.2s)
+        &:hover
+            background: #bbaaa4 !important

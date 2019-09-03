@@ -1,0 +1,44 @@
+//Border Box
+@mixin border-box
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+// Inline Block
+@mixin inlineBlock($vAlign)
+    display: inline-block
+    vertical-align: $vAlign
+// PAdding
+@mixin padTB($padValue)
+    padding-top: $padValue
+    padding-bottom: $padValue
+@mixin padLR($padValue)
+    padding-left: $padValue
+    padding-right: $padValue
+//Border radius
+@mixin borderRadius($borderValue)
+    -webkit-border-radius: $borderValue
+    -moz-border-radius: $borderValue
+    border-radius: $borderValue
+// CSS Transition
+@mixin transition($value)
+    -webkit-transition: all $value ease-in-out
+    -moz-transition: all $value ease-in-out
+    -ms-transition: all $value ease-in-out
+    -o-transition: all $value ease-in-out
+    transition: all $value ease-in-out
+@mixin pulse($time)
+    -webkit-animation: pulse $time ease-out
+    -moz-animation: pulse $time ease-out
+    animation: pulse $time ease-out
+    -webkit-animation-iteration-count: infinite
+    -moz-animation-iteration-count: infinite
+    animation-iteration-count: infinite
+// Border
+@mixin border($width, $color)
+    border: $width solid
+    border-color: $color
+//Box Shadow
+@mixin boxshadow()
+  -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.4)
+  -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.4)
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.4)

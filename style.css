@@ -1,0 +1,18 @@
+/*
+Theme Name: Hadeco (Pty) Ltd
+Theme URI: http://brandcandy.co.za
+Author: Robin Devitt 
+Author URI: http://brandcandy.co.za
+Description: Custom theme for Hadeco (Pty) Ltd
+License: Brandcandy WordPress Theme, Copyright 2018 Robin Devitt
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Brandcandy
+*/
+
+#hi_wrapper.post-type-archive .category_wrapper #primary #wrapall .woocommerce-category-description{
+	display: none;
+}
+
+.radioSelectContainer.size label span.radioControl {
+    display: none;
+}
